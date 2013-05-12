@@ -13,7 +13,7 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
 
-* iPhone integration
+* iPhone integration (available in the app store)
 * Shopping Cart
 * Extensive Visitor Tracking - How many sales dollars were generated from a specific email ad or newsletter.
 * Integrated Email Marketing - Automatically offer a coupon to abandoned carts.
@@ -44,11 +44,11 @@ We are still in the process of testing themes, a list will be made available.
 
 = Where is all of my product information stored? =
 
-All product information including inventory counts is stored on your cloud account with AllProWebTools.  This is what allows all smart phones, point of sale devices, and linked websites to share inventory information.  The benefit here is that changing the retail price or uploading a new product can be done from your control panel and instantly update all devices.
+All product information including inventory counts is stored on your cloud account with AllProWebTools.  This is what allows all smart phones, point of sale devices, and linked websites to share inventory information.  The benefit is that changing the retail price or uploading a new product can be done from your control panel and instantly update all devices.
 
 = Can I upload my inventory as a CSV? =
 
-You can upload or download all of your inventory from a CSV at any time.
+You can upload or download all of your inventory in CSV format at any time.
 
 == Screenshots ==
 
