@@ -56,6 +56,10 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 
 == Frequently Asked Questions ==
 
+= Why do I see all these flowers when I first install? =
+
+New installs are setup with our demo account so you can see the functionality.  This also demonstrates how to tie multiple sites together, the demo site your new install is tied to is http://demo.AllProWebTools.com.  You can login to the demo account to play around in the control panel at http://demo.AllProWebTools.com/logmein. Login: demo Password: demo.  The demo resets itself every hour on the hour at which time your changes will be lost.
+
 = Which themes are compatible with this plugin? =
 
 We are still in the process of testing themes, a list will be made available.
