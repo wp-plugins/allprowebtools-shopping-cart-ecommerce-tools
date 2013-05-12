@@ -58,8 +58,8 @@ License: GPLv2
 
 	if ( (!get_site_option("APWTAPIKEY")) || (!get_site_option("APWTAPIAUTH")) ) {
 		//apikeys not set yet - show the demo
-		update_site_option("APWTAPIKEY") = "00myallprowebtoolsdemo255";
-		update_site_option("APWTAPIAUTH") = "myallprowebtools";
+		update_site_option("00myallprowebtoolsdemo255");
+		update_site_option("myallprowebtools");
 	}
 
 	function ajaxloadpost_enqueuescripts() {
