@@ -42,8 +42,6 @@ function APWTSettings() {
 	    $count = 0;
 		} else {
 			//they have entered their api key - now save it
-			print "<hr>checkpoint1<hr>";
-
 			if (!add_option( 'APWTAPIKEY', $_POST['apikey'])) {
 				update_option( 'APWTAPIKEY', $_POST['apikey'] );
 				if($_POST['apikey'] == '') {
@@ -57,8 +55,6 @@ function APWTSettings() {
 	    $message = '<div id="message" class="error">Invalid API Auth</div>';
 	    $count2 = 0;
 	  } else {
-print "<hr>checkpoint2<hr>";
-
 			//they have entered their api key - now save it
 			if (!add_option( 'APWTAPIAUTH', $_POST['apiauth'])) {
 				update_option( 'APWTAPIAUTH', $_POST['apiauth'] );
