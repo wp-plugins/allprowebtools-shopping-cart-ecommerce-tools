@@ -13,7 +13,7 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
 
-* iPhone integration [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
+* iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
 * Shopping Cart
 * Extensive Visitor Tracking - How many sales dollars were generated from a specific email ad or newsletter.
 * Integrated Email Marketing - Automatically offer a coupon to abandoned carts.
