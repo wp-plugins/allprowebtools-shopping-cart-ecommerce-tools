@@ -1,0 +1,3 @@
+svn co http://plugins.svn.wordpress.org/allprowebtools-shopping-cart-ecommerce-tools e:\svn-files
+
+svn cleanup e:\svn-files
