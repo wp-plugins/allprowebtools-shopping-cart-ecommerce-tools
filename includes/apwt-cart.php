@@ -99,7 +99,8 @@ function APWTShowCart() {
 		APWTShowCartNow();
 	}
 
-	require_once('wp-content/plugins/APWT-Cart/templates/shopping-cart.php');
+	require_once(APWT_PLUGIN_PATH.'templates/shopping-cart.php');
+
 }
 
 function APWTCheckout() {
@@ -187,7 +188,7 @@ if ($_POST['giftcertificate'] == 'Submit') {
 }
 
 	//if not validated - show error msg and ask for re-entry
-	require_once('wp-content/plugins/APWT-Cart/templates/secure-buyers.php');
+	require_once(APWT_PLUGIN_PATH.'templates/secure-buyers.php');
 }
 
 function APWTThankYou() {

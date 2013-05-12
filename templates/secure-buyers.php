@@ -1,6 +1,6 @@
 <?php
 	//christine hacking
-		require_once('wp-content/plugins/APWT-Cart/includes/apwt-cart.php');
+		require_once(APWT_PLUGIN_PATH.'includes/apwt-cart.php');
 ?>
 <!-- begin main content -->
 <section id="main">

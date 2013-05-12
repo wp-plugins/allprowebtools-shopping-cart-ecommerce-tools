@@ -52,10 +52,12 @@ License: GPLv2
 	}
 
 	//ajax
-	define('AJAXLOADPOSTURL', WP_PLUGIN_URL."/".dirname( plugin_basename( __FILE__ ) ) );
+//	define('AJAXLOADPOSTURL', WP_PLUGIN_URL."/".dirname( plugin_basename( __FILE__ ) ) );
+	define( 'APWT_PLUGIN_PATH', plugin_dir_path(__FILE__) );
+	define( 'APWT_AJAX_POST_URL', plugin_dir_url(__FILE__) );
 
 	function ajaxloadpost_enqueuescripts() {
-    	wp_enqueue_script('ajaxloadpost', AJAXLOADPOSTURL.'/js/ajaxloadpost.js', array('jquery'));
+    	wp_enqueue_script('ajaxloadpost', APWT_AJAX_POST_URL.'js/ajaxloadpost.js', array('jquery'));
     	wp_localize_script( 'ajaxloadpost', 'ajaxloadpostajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 
