@@ -56,6 +56,12 @@ License: GPLv2
 	define( 'APWT_PLUGIN_PATH', plugin_dir_path(__FILE__) );
 	define( 'APWT_AJAX_POST_URL', plugin_dir_url(__FILE__) );
 
+	if ( (!get_site_option("APWTAPIKEY")) || (!get_site_option("APWTAPIAUTH")) ) {
+		//apikeys not set yet - show the demo
+		update_site_option("APWTAPIKEY") = "00myallprowebtoolsdemo255";
+		update_site_option("APWTAPIAUTH") = "myallprowebtools";
+	}
+
 	function ajaxloadpost_enqueuescripts() {
     	wp_enqueue_script('ajaxloadpost', APWT_AJAX_POST_URL.'js/ajaxloadpost.js', array('jquery'));
     	wp_localize_script( 'ajaxloadpost', 'ajaxloadpostajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );

@@ -32,9 +32,27 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 
 == Installation ==
 
+'''Automatic Installation'''
+
+1. Login to your wordpress with wp-admin
+1. Choose '''Plugins''' from the menu and click '''Add New'''
+1. Search for '''AllProWebTools''' and then click '''Install Now'''
+1. Once the plugin is installed, click '''Activate Now'''
+1. Next see '''Configuration''' below.
+
+'''Manual Installation'''
+
 1. Unzip `allprowebtools.zip` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
+
+'''Configuration'''
+
 1. Upon activation, all of the necessary pages will be created to run the cart.
+1. Choose `settings` from the `AllProWebTools` menu in wp-admin and click the link to create an AllProWebTools account.
+1. Enter the API keys you recieve via email after creating your account and click `Update Settings`.
+1. Click the `AllProWebTools` link in the menu of wp-admin and click the link at the top of the page to access your AllProWebTools console and begin configuring your products.
+
+Tutorial videos are available on our youtube channel - AllProWebTools
 
 == Frequently Asked Questions ==
 
