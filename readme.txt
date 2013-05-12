@@ -62,9 +62,9 @@ You can upload or download all of your inventory in CSV format at any time.
 
 == Changelog ==
 
-= 0.35 [BETA] =
+= 0.44 [BETA] =
 1. addressed several issues with hard references to plugin dir
 1. improved some variable names for compatiblity
 
-= 0.34 [BETA] =
+= 0.43 [BETA] =
 1. first load to WP repository
