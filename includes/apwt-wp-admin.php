@@ -42,6 +42,8 @@ function APWTSettings() {
 	    $count = 0;
 		} else {
 			//they have entered their api key - now save it
+			print "<hr>checkpoint1<hr>";
+
 			if (!add_option( 'APWTAPIKEY', $_POST['apikey'])) {
 				update_option( 'APWTAPIKEY', $_POST['apikey'] );
 				if($_POST['apikey'] == '') {
@@ -55,6 +57,8 @@ function APWTSettings() {
 	    $message = '<div id="message" class="error">Invalid API Auth</div>';
 	    $count2 = 0;
 	  } else {
+print "<hr>checkpoint2<hr>";
+
 			//they have entered their api key - now save it
 			if (!add_option( 'APWTAPIAUTH', $_POST['apiauth'])) {
 				update_option( 'APWTAPIAUTH', $_POST['apiauth'] );
@@ -129,8 +133,8 @@ function APWTSettings() {
 		  </tr>
 		 </tbody>
 		 </table>
+		<p><input type="submit" value="Update Settings" id="settings" name="B1" class="button"></p>
 	</form>
-	<p><input type="submit" value="Update Settings" id="settings" name="B1" class="button"></p>
 	<p>If you don't already have an AllProWebTools account, you can <a target="register" href="http://lib1.allprowebtools.com/registration/welcome.php">sign up for one here.</a></p>
 </div>
 <?php
