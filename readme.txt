@@ -13,7 +13,7 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
 
-* iPhone integration (available in the app store)
+* iPhone integration [AllProWebTools iPhone app](https://itunes.apple.com/us/app/allprowebtools-pos-website/id639358725?mt=8)
 * Shopping Cart
 * Extensive Visitor Tracking - How many sales dollars were generated from a specific email ad or newsletter.
 * Integrated Email Marketing - Automatically offer a coupon to abandoned carts.
@@ -28,7 +28,7 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * Help videos are included on each page of the control panel
 * Shipping methods - USPS, FedEx, UPS
 
-This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin and can be created at http://lib1.allprowebtools.com/registration/welcome.php or you will be directed to register from within the plugin settings menu.
+This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
 == Installation ==
 
@@ -48,11 +48,11 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 **Configuration**
 
 1. Upon activation, all of the necessary pages will be created to run the cart.
-1. Choose `settings` from the `AllProWebTools` menu in wp-admin and click the link to create an AllProWebTools account.
-1. Enter the API keys you recieve via email after creating your account and click `Update Settings`.
-1. Click the `AllProWebTools` link in the menu of wp-admin and click the link at the top of the page to access your AllProWebTools console and begin configuring your products.
+1. Choose **settings** from the **AllProWebTools** menu in wp-admin and click the link to create an AllProWebTools account.
+1. Enter the API keys you recieve via email after creating your account and click **Update Settings**.
+1. Click the **AllProWebTools** link in the menu of wp-admin and click the link at the top of the page to access your AllProWebTools console and begin configuring your products.
 
-Tutorial videos are available on our youtube channel - AllProWebTools
+[AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 
 == Frequently Asked Questions ==
 
