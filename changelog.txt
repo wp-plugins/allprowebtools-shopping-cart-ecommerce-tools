@@ -1,0 +1,10 @@
+ver. 0.34 [BETA] - 05/11/13
+- first load to WP repository
+- found several issues with hard references to plugin dir
+
+ver. 0.35 [BETA] - BigD213 - 03/07/13
+- bugfix: coupon codes not filling cart when empty
+- feature: cart auto fill link functionality for WP
+- feature: added version reporting thru API calls
+
+2013-02-25 8:39 PM - apwt.php - Redid class APWTCartWidget - Christine
