@@ -3,7 +3,7 @@
 Plugin Name: AllProWebTools Cart
 Plugin URI: http://www.AllProWebTools.com
 Description: AllProWebTools Shopping Cart
-Version: 0.44 [BETA]
+Version: 0.45BETA
 Author: AllProWebTools.com
 Author URI: http://www.AllProWebTools.com
 License: GPLv2
