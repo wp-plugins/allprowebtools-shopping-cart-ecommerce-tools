@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: allprowebtools, pmschartz, rcgig, ceec
-Tags: allprowebtools, e-commerce, shop, cart, paypal, authorize, inventory, ecommerce, shipping, all, pro, tools
+Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
 Tested up to: 3.5.1
-Stable tag: trunk
+Stable tag: 0.45BETA
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,13 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * Authorize.Net and PayPal Integration
 * Help videos are included on each page of the control panel
 * Shipping methods - USPS, FedEx, UPS
+* unlimited products
+* unlimited staff logins
+* unlimited variations, categories, and attributes
+* Ticket product allows you to sell event tickets with a scannable QR code to verify authenticity.
+* Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
+
+free chat support
 
 This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
@@ -84,9 +91,18 @@ You can upload or download all of your inventory in CSV format at any time.
 
 == Changelog ==
 
-= 0.44 [BETA] - 05/11/13 =
+= 0.45BETA - 05/18/13 =
+1. Added functionality for multiple gift certificates and fixed display issues with gift certificate invoices
+1. Standardized variable names in relation to ajax functions
+1. Fixed version numbering
+1. Prettier admin Screenshots
+1. Unique variable names added to prevent conflicts
+1. Readme descriptions updated
+1. Added ticket product
+
+= 0.44BETA - 05/11/13 =
 1. addressed several issues with hard references to plugin dir
 1. improved some variable names for compatiblity
 
-= 0.43 [BETA] - 05/11/13 =
+= 0.43BETA - 05/11/13 =
 1. first load to WP repository
