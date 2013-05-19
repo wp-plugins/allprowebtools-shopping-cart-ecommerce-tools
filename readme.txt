@@ -106,3 +106,8 @@ You can upload or download all of your inventory in CSV format at any time.
 
 = 0.43BETA - 05/11/13 =
 1. first load to WP repository
+
+== Upgrade Notice ==
+
+= 0.45BETA =
+Added Ticketing and Gift Certificate Products.
