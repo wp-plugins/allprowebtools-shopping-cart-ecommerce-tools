@@ -20,10 +20,7 @@ function APWTConsole() {
 	$thereturn = wp_remote_get($thisurl);
 	$consolelocation = $thereturn['body'];
 
-	print 'You can access your AllProWebTools console at <a target="console" href="'.$consolelocation.'">'.$consolelocation.'</a><br>';
-?>
-Here you can configure products, shipping options, autoresponders, manage users, coupons, tax rates, quantity discounts, and much more.
-<?php
+	print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'login-screen.png', __FILE__ ).'" alt="Login now"></a>';
 }
 
 function APWTSettings() {

@@ -55,7 +55,7 @@ function APWTShowProduct() {
 		$thereturn = apwt_remote_get($thisurl);
 
 		$thereturn .= '<div id="dialog-form" title="Get A Coupon">';
-		$thereturn .= ajaxloadpost_show_latest_posts($_REQUEST);
+		$thereturn .= APWTAjaxGetCouponContent($_REQUEST);
 		$thereturn .= '</div>';
 
 		return $thereturn;
@@ -104,14 +104,6 @@ function APWTShowCart() {
 }
 
 function APWTCheckout() {
-if ($_POST['giftcertificate'] == 'Submit') {
-		//gift certificate
-		print "<pre>";
-		print_r($_POST);
-		print "</pre>";
-		exit;
-}
-
 	if (($_POST['username'] != '') && ($_POST['create'] == '0')) {
 		//they have submitted credentials
 		//send credentials to api for validation
@@ -195,8 +187,24 @@ function APWTThankYou() {
 	if ($_REQUEST['giftcertificate'] == 'Submit') {
 		if ($_REQUEST['error'] == '') {
 			//send the info to be attached to a gift certificate
-			$thisurl = '/wordpress/wpapi.php?action=thanks&orderid='.$_REQUEST['orderid'].'&giftcertificate=yes&'.APIAuth().'&wp=1';
-			$thereturn = apwt_remote_get($thisurl);
+			$thisurl = '/wordpress/wpapi.php';
+			$postvars['action'] = 'thanks';
+			$postvars['giftcertificate'] = 'yes';
+			$postvars['orderid'] = $_POST['orderid'];
+			$postvars['amount'] = $_POST['amount'];
+			$postvars['prodid'] = $_POST['prodid'];
+			$postvars['exp'] = $_POST['exp'];
+			$postvars['giftname'] = $_POST['giftname'];
+			$postvars['email'] = $_POST['email'];
+			$postvars['method'] = $_POST['method'];
+			$postvars['date'] = $_POST['date'];
+			$postvars['from'] = $_POST['from'];
+			$postvars['message'] = $_POST['message'];
+			$postvars['wp'] = 1;
+			$postvars['apikey'] = get_option("APWTAPIKEY");
+			$postvars['apiauth'] = get_option("APWTAPIAUTH");
+			$postvars['apwtpluginversion'] = get_option("APWT_THIS_VERSION");
+			$thereturn = apwt_remote_post($thisurl,$postvars,1);
 			print $thereturn;
 		}
 	}
@@ -329,8 +337,8 @@ function APWTUpdateBilling($_POST) {
 
 // ajax functions
 
-function ajaxloadpost_ajaxhandler() {
-    if ( !wp_verify_nonce( $_POST['nonce'], "ajaxloadpost_nonce")) {
+function APWTAjaxGetCoupon() {
+    if ( !wp_verify_nonce( $_POST['nonce'], "apwt_coupon_nonce")) {
         exit("Wrong nonce");
     }
 
@@ -342,10 +350,10 @@ function ajaxloadpost_ajaxhandler() {
 
 
 
-function ajaxloadpost_show_latest_posts($_REQUEST){
+function APWTAjaxGetCouponContent($_REQUEST){
 
     $results ='';
-    $nonce = wp_create_nonce("ajaxloadpost_nonce");
+    $nonce = wp_create_nonce("apwt_coupon_nonce");
 
 		$result = 'Sign Up to Get GREAT Discounts on 256 Products!<br>Enter your email address and we will send you a coupon for Right Away!<br><br>';
     $result.=  '<div id="loadpostresult"></div>';
@@ -356,7 +364,7 @@ function ajaxloadpost_show_latest_posts($_REQUEST){
 		//form fields to send to ajax
  		$arguments =  "'name','email','prodid','".$nonce."'";
 
-    $result .= ' <input type="submit" name="coupon" value="Get A Coupon" onclick="ajaxloadpost_loadpost('.$arguments.');">';
+    $result .= ' <input type="submit" name="coupon" value="Get A Coupon" onclick="APWTCouponAjax('.$arguments.');">';
     $result .= '<br><br>I agree to receive additonal coupons, offers and discounts at my email address.  I can cancel anytime by clicking the cancel link at the bottom of any email from 256.';
 
 

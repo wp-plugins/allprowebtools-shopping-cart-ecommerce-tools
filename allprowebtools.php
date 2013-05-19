@@ -13,7 +13,7 @@ License: GPLv2
 	require_once('includes/apwt-wp-admin.php');
 	require_once('includes/apwt-cart.php');
 
-	add_action( 'wp_enqueue_scripts', 'wpse49339_enqueue_styles' );
+	add_action( 'wp_enqueue_scripts', 'APWT_enqueue_styles' );
 	add_action('init', 'init_sessions');
 	add_action('admin_menu','APWT_admin_menu');
 	add_action( 'widgets_init', create_function('', 'return register_widget("APWTLeadBox");') );
@@ -34,7 +34,7 @@ License: GPLv2
 	register_activation_hook(__FILE__,'APWTCartActivate');
 	register_deactivation_hook( __FILE__, 'APWTCartDeactivate' );
 
-	function wpse49339_enqueue_styles() {
+	function APWT_enqueue_styles() {
 		wp_register_style( 'custom-style', plugins_url( '/templates/style.css', __FILE__ ), array(), '1', 'all' );
 		wp_enqueue_style( 'custom-style' );
     wp_register_style('jquery-ui', plugins_url( '/js/jquery-ui.css', __FILE__ ), array(), '1', 'all' );
@@ -62,14 +62,14 @@ License: GPLv2
 		update_site_option("APWTAPIAUTH", "myallprowebtools");
 	}
 
-	function ajaxloadpost_enqueuescripts() {
-    	wp_enqueue_script('ajaxloadpost', APWT_AJAX_POST_URL.'js/ajaxloadpost.js', array('jquery'));
-    	wp_localize_script( 'ajaxloadpost', 'ajaxloadpostajax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+	function APWT_ajax_enqueuescripts() {
+    	wp_enqueue_script('APWTajax', APWT_AJAX_POST_URL.'js/apwtajax.js', array('jquery'));
+    	wp_localize_script( 'APWTajax', 'APWTajaxurl', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 	}
 
-	add_action('wp_enqueue_scripts', ajaxloadpost_enqueuescripts);
-	add_action( 'wp_ajax_nopriv_ajaxloadpost_ajaxhandler', 'ajaxloadpost_ajaxhandler' );
-	add_action( 'wp_ajax_ajaxloadpost_ajaxhandler', 'ajaxloadpost_ajaxhandler' );
+	add_action('wp_enqueue_scripts', APWT_ajax_enqueuescripts);
+	add_action( 'wp_ajax_nopriv_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
+	add_action( 'wp_ajax_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
 
 
 
