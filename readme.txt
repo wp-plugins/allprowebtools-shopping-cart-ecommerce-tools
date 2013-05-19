@@ -3,7 +3,7 @@ Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, shop, cart, paypal, authorize, inventory, ecommerce, shipping, all, pro, tools
 Requires at least: 3.4
 Tested up to: 3.5.1
-Stable tag: trunk
+Stable tag: 0.45BETA
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
