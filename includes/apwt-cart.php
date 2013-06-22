@@ -308,7 +308,7 @@ function APWTForgotPassword() {
 }
 
 function APWTAddReview() {
-	$thisurl = "/wordpress/wpapi.php?action=addreview&".APIAuth()."&wp=1&prodid=".$_REQUEST['prodid']."&email=".$_REQUEST['email']."&star=".$_REQUEST['star']."&title=".$_REQUEST['title']."&reviewblurb=".urlencode($_REQUEST['reviewblurb'])."&review_name=".urlencode($_REQUEST['review_name'])."&B1=".$_REQUEST['B1'];
+	$thisurl = "/wordpress/wpapi.php?action=addreview&".APIAuth()."&wp=1&prodid=".$_REQUEST['prodid']."&email=".$_REQUEST['email']."&star=".$_REQUEST['star']."&title=".urlencode($_REQUEST['title'])."&reviewblurb=".urlencode($_REQUEST['reviewblurb'])."&review_name=".urlencode($_REQUEST['review_name'])."&B1=".$_REQUEST['B1'];
 	$thereturn = apwt_remote_get($thisurl);
 
 	print $thereturn;
