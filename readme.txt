@@ -3,7 +3,7 @@ Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
 Tested up to: 3.5.1
-Stable tag: 0.45BETA
+Stable tag: 0.46BETA
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * unlimited variations, categories, and attributes
 * Ticket product allows you to sell event tickets with a scannable QR code to verify authenticity.
 * Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
+* Star rating product review
+* Limit products to US customers only
+* Limit products to preset zip codes for pickup and delivery shipping options
 
 free chat support
 
@@ -91,6 +94,11 @@ You can upload or download all of your inventory in CSV format at any time.
 
 == Changelog ==
 
+= 0.46BETA - 06/10/13 =
+1. Star rating product review
+1. Limit products to US only
+1. Limit products to preset zip codes only
+
 = 0.45BETA - 05/18/13 =
 1. Added functionality for multiple gift certificates and fixed display issues with gift certificate invoices
 1. Standardized variable names in relation to ajax functions
@@ -106,8 +114,3 @@ You can upload or download all of your inventory in CSV format at any time.
 
 = 0.43BETA - 05/11/13 =
 1. first load to WP repository
-
-== Upgrade Notice ==
-
-= 0.45BETA =
-Added Ticketing and Gift Certificate Products.
