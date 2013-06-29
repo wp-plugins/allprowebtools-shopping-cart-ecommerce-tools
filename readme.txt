@@ -13,6 +13,7 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
 
+* Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
 * Shopping Cart
 * Extensive Visitor Tracking - How many sales dollars were generated from a specific email ad or newsletter.
