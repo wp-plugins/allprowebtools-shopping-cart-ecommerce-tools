@@ -92,6 +92,7 @@ You can upload or download all of your inventory in CSV format at any time.
 5. Product Management Quantity Discount.
 6. Point of sale
 7. Mobile Integration
+8. Credit Card Swipe
 
 == Changelog ==
 
