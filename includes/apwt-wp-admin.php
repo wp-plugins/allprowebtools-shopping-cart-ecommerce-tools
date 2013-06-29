@@ -28,17 +28,13 @@ function APWTSettings() {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
 	}
 
-	if ($_POST['ClearServerUrl'] != '') {
-		$_SESSION['serverurl'] = '';
-		return;
-	}
-
 	if ($_POST['B1'] != '') {
 	  if((strlen($_POST['apikey']) != 25) && ($_POST['apikey'] != '')) {
 	    $message = '<div id="message" class="error">Invalid API Key</div>';
 	    $count = 0;
 		} else {
 			//they have entered their api key - now save it
+			$_SESSION['serverurl'] = '';
 			if (!add_option( 'APWTAPIKEY', $_POST['apikey'])) {
 				update_option( 'APWTAPIKEY', $_POST['apikey'] );
 				if($_POST['apikey'] == '') {
@@ -133,11 +129,6 @@ function APWTSettings() {
 <?php
   if($count3 == 2) {
 		print '<br><br><img src="'.plugins_url( 'getstartedarrow.jpg', __FILE__ ).'" alt="Click AllProWebTools to get started!">';
-	}
-	$debug = 0;
-	if ($debug == 1) {
-		print "Server: ".$_SESSION['serverurl']."<br>";
-		print '<form method="POST" action=""><input type="submit" value="ClearServer" id="ClearServerUrl" name="ClearServerUrl" class="button"></form>';
 	}
 }
 ?>
