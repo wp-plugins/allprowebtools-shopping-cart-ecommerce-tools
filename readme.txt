@@ -3,7 +3,7 @@ Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
 Tested up to: 3.5.2
-Stable tag: 0.46BETA
+Stable tag: 0.47BETA
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 == Description ==
 
-After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
+After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  With Free chat support, we will even do a screen-share to walk you through the system and help you get started.  We would love to hear your feedback!
 
 [See the online demo here](http://wpdemo.allprowebtools.com)
 
@@ -39,8 +39,6 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * Limit products to US customers only
 * Limit products to preset zip codes for pickup and delivery shipping options
 
-Free chat support
-
 This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
 == Installation ==
@@ -58,12 +56,17 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 1. Unzip `allprowebtools.zip` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
+**Demo Mode**
+When you first install the plugin, it will be configured for Demo Mode.  Demo Mode comes pre-loaded with a number of products, customers, coupons, etc. for you to play around with.
+
+When you are ready to get started with your own account, simply follow the configuration instructions below:
+
 **Configuration**
 
 1. Upon activation, all of the necessary pages will be created to run the cart.
-1. Choose **settings** from the **AllProWebTools** menu in wp-admin and click the link to create an AllProWebTools account.
+1. Choose **settings** from the **AllProWebTools** menu in wp-admin and click the link that says **sign up for one here** to create an AllProWebTools account.
 1. Enter the API keys you recieve via email after creating your account and click **Update Settings**.
-1. Click the **AllProWebTools** link in the menu of wp-admin and click the link at the top of the page to access your AllProWebTools console and begin configuring your products.
+1. Click the **AllProWebTools** link in the menu of wp-admin and click the button that says "login now" to access your AllProWebTools console and begin configuring your products.
 
 [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 
@@ -88,15 +91,22 @@ You can upload or download all of your inventory in CSV format at any time.
 == Screenshots ==
 
 1. The shopping cart.
-2. Product Listing.
+2. Track actual sales dollars & activity that result from email marketing.
 3. Product Management Listing.
 4. Product Management Product Options.
 5. Product Management Quantity Discount.
 6. Point of sale
 7. Mobile Integration
 8. Credit Card Swipe
+9. Product Listing.
 
 == Changelog ==
+
+= 0.47BETA - 07/04/13 =
+1. Fixed leadbox widget
+1. Silenced PHP Notice Warnings in debug mode
+1. Improved demo system with a better walk through
+1. Improved multi-site support
 
 = 0.46BETA - 06/10/13 =
 1. Star rating product review
@@ -118,3 +128,8 @@ You can upload or download all of your inventory in CSV format at any time.
 
 = 0.43BETA - 05/11/13 =
 1. first load to WP repository
+
+== Upgrade Notice ==
+
+= 0.47BETA =
+Important bug fixes for the Leadbox Widget.  Also verified to work with WordPress version 3.5.2
