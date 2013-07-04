@@ -121,7 +121,7 @@ function apwt_remote_get($url) {
 	foreach ($pagelist as $key => $value) {
 		$urlappend .= "&pagearray[".$key."]=".$value;
 	}
-	$url .= $urlappend;
+	$url .= $urlappend.'&siteurl='.$_SERVER['HTTP_HOST'];
 	$response = wp_remote_get("http:".$_SESSION['serverurl'].$url, $args);
 
 	if (empty($response->errors)) {
