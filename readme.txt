@@ -15,6 +15,8 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 
 [See the online demo here](http://wpdemo.allprowebtools.com)
 
+[AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are also available to assist you.
+
 * Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
 * Shopping Cart
@@ -67,8 +69,6 @@ When you are ready to get started with your own account, simply follow the confi
 1. Choose **settings** from the **AllProWebTools** menu in wp-admin and click the link that says **sign up for one here** to create an AllProWebTools account.
 1. Enter the API keys you recieve via email after creating your account and click **Update Settings**.
 1. Click the **AllProWebTools** link in the menu of wp-admin and click the button that says "login now" to access your AllProWebTools console and begin configuring your products.
-
-[AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 
 == Frequently Asked Questions ==
 
