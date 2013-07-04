@@ -20,7 +20,11 @@ function APWTConsole() {
 	$thereturn = wp_remote_get($thisurl);
 	$consolelocation = $thereturn['body'];
 
-	print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'login-screen.png', __FILE__ ).'" alt="Login now"></a>';
+	if (get_option("APWTAPIKEY") == '00myallprowebtoolsdemo255') {
+		print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'demo-screen.png', __FILE__ ).'" alt="Demo now"></a>';
+	} else {
+		print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'login-screen.png', __FILE__ ).'" alt="Login now"></a>';
+	}
 }
 
 function APWTSettings() {
