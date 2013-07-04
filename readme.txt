@@ -59,6 +59,7 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 **Demo Mode**
+
 When you first install the plugin, it will be configured for Demo Mode.  Demo Mode comes pre-loaded with a number of products, customers, coupons, etc. for you to play around with.
 
 When you are ready to get started with your own account, simply follow the configuration instructions below:
