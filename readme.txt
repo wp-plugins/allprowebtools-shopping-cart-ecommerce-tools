@@ -39,7 +39,7 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * Limit products to US customers only
 * Limit products to preset zip codes for pickup and delivery shipping options
 
-free chat support
+Free chat support
 
 This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
