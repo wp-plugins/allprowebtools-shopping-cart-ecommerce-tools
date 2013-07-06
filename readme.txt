@@ -27,7 +27,7 @@ Take a test spin of our WordPress plugin BETA.  We would love to hear your feedb
 
 We want you to enjoy your experience with us, that is why we offer the following support options:
 
-* [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are also available to assist you.
+* [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 * Free live chat support (Monday - Friday 9am - 5pm MST)
 * Screen-share to walk you through the system and help you get started.
 
@@ -55,7 +55,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Limit products to US customers only
 * Limit products to preset zip codes for pickup and delivery shipping options
 
-=Products=
+= Products =
 * unlimited products
 * Physical products
 * Downloadable Products
@@ -67,6 +67,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Repeat order products
 * Bundled products (or kits)
 
+= Serviceware =
 This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
 == Installation ==
