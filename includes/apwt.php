@@ -72,6 +72,7 @@ function apwt_remote_post($url,$postvars,$secure=0) {
 	} else {
 		$protocol = 'http:';
 	}
+	$postvars['ip'] = $_SERVER["REMOTE_ADDR"];
 	$args['body'] = $postvars;
 	$response = wp_remote_post($protocol.$_SESSION['serverurl'].$url, $args);
 
@@ -121,7 +122,7 @@ function apwt_remote_get($url) {
 	foreach ($pagelist as $key => $value) {
 		$urlappend .= "&pagearray[".$key."]=".$value;
 	}
-	$url .= $urlappend;
+	$url .= $urlappend.'&siteurl='.$_SERVER['HTTP_HOST'].'&ip='.$_SERVER["REMOTE_ADDR"];
 	$response = wp_remote_get("http:".$_SESSION['serverurl'].$url, $args);
 
 	if (empty($response->errors)) {
