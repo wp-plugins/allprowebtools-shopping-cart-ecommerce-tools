@@ -23,7 +23,7 @@ Products - Sell physical products and calculate shipping; downloadable products 
 
 Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
 
-=Support=
+= Support =
 
 We want you to enjoy your experience with us, that is why we offer the following support options:
 
@@ -31,7 +31,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Free live chat support (Monday - Friday 9am - 5pm MST)
 * Screen-share to walk you through the system and help you get started.
 
-=Features=
+= Features =
 
 * Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
