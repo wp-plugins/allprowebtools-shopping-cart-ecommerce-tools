@@ -260,7 +260,7 @@ function APWTPageList() {
 	$APWTPageArray[3]['Title'] = 'APWTCheckout';
 	$APWTPageArray[3]['Content'] = '[APWTCheckout]';
 	$APWTPageArray[3]['URL'] = 'APWTCheckout';
-	$APWTPageArray[3]['Template'] = 'page-templates/full-width.php';
+	$APWTPageArray[3]['Template'] = '';	//page-templates/full-width.php
 
 	$APWTPageArray[4]['Title'] = 'APWTLogout';
 	$APWTPageArray[4]['Content'] = '[APWTLogout]';
