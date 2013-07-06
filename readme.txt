@@ -129,6 +129,9 @@ You can upload or download all of your inventory in CSV format at any time.
 
 == Changelog ==
 
+= 0.48BETA - 07/04/13 =
+1. Fixed iptracking and affiliate tracking
+
 = 0.47BETA - 07/04/13 =
 1. Fixed leadbox widget
 1. Silenced PHP Notice Warnings in debug mode
