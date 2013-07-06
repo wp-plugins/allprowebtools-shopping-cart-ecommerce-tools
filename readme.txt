@@ -29,7 +29,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 
 * [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 * Free live chat support (Monday - Friday 9am - 5pm MST)
-* Screen-share to walk you through the system and help you get started.
+* Request a screen-share for a personal walk through the system to help you get started.
 
 = Features =
 
@@ -49,17 +49,17 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Authorize.Net and PayPal Integration
 * Help videos are included on each page of the control panel
 * Shipping methods - USPS, FedEx, UPS
-* unlimited staff logins
-* unlimited variations, categories, and attributes
+* Unlimited staff logins
+* Unlimited variations, categories, and attributes
 * Star rating product review
 * Limit products to US customers only
 * Limit products to preset zip codes for pickup and delivery shipping options
 
 = Products =
-* unlimited products
+* Unlimited products
 * Physical products
 * Downloadable Products
-* Ticket product allows you to sell event tickets with a scannable QR code to verify authenticity.
+* Ticket product allow you to sell event tickets with a scannable QR code to verify authenticity.
 * Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
 * Hourly rate products
 * Account credit products - allow clients to pre-pay for services and use credits later
@@ -68,7 +68,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Bundled products (or kits)
 
 = Serviceware =
-This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
+This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin. A link will be provided to create a new account from within the plugin settings menu.
 
 == Installation ==
 
