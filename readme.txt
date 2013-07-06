@@ -11,18 +11,35 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 == Description ==
 
-After 5 years as a standalone Ecommerce system, Take a test spin of our WordPress plugin BETA.  With Free chat support, we will even do a screen-share to walk you through the system and help you get started.  We would love to hear your feedback!
-
 [See the online demo here](http://wpdemo.allprowebtools.com)
 
-[AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are also available to assist you.
+Combined ecommerce and email marketing for revenue generating campaigns.
+
+AllProWebTools is an all-in-one commerce solution for both online and brick and mortar small businesses. It combines all inventory, customers, leads, and orders between your online shopping cart, in store POS, and mobile devices. One login and one solution to manage content, lead generation and tracking to online shopping cart or POS to shipping to order tracking to customer re-engagement and re-marketing.
+
+Productivity tools - AllProWebTools also includes productivity tools to keep your business running efficiently. From task management to timecards to sales commission reports.
+
+Products - Sell physical products and calculate shipping; downloadable products such as MP3s, ringtones, and ebooks; Tickets to events with QR Code validation; Memberships to members only content; Autoship product purchase plans; Gift Certificates; Hourly labor with time tracking and project codes.
+
+Take a test spin of our WordPress plugin BETA.  We would love to hear your feedback!
+
+=Support=
+
+We want you to enjoy your experience with us, that is why we offer the following support options:
+
+* [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are also available to assist you.
+* Free live chat support (Monday - Friday 9am - 5pm MST)
+* Screen-share to walk you through the system and help you get started.
+
+=Features=
 
 * Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
 * Shopping Cart
+* Email marketing
+* Autoresponder
 * Extensive Visitor Tracking - How many sales dollars were generated from a specific email ad or newsletter.
 * Integrated Email Marketing - Automatically offer a coupon to abandoned carts.
-* Physical & Downloadable Products
 * Phone Orders - Track sales from phone calls and how they originated online.
 * Coupons & Discounts
 * Integrated Shipping Labels - Print shipping right from your control panel and leave the package at the door to be picked up.
@@ -32,14 +49,23 @@ After 5 years as a standalone Ecommerce system, Take a test spin of our WordPres
 * Authorize.Net and PayPal Integration
 * Help videos are included on each page of the control panel
 * Shipping methods - USPS, FedEx, UPS
-* unlimited products
 * unlimited staff logins
 * unlimited variations, categories, and attributes
-* Ticket product allows you to sell event tickets with a scannable QR code to verify authenticity.
-* Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
 * Star rating product review
 * Limit products to US customers only
 * Limit products to preset zip codes for pickup and delivery shipping options
+
+=Products=
+* unlimited products
+* Physical products
+* Downloadable Products
+* Ticket product allows you to sell event tickets with a scannable QR code to verify authenticity.
+* Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
+* Hourly rate products
+* Account credit products - allow clients to pre-pay for services and use credits later
+* Membership products
+* Repeat order products
+* Bundled products (or kits)
 
 This is a Serviceware plugin for WordPress which interfaces with the AllProWebTools cloud servers to process transactions, store inventory information, customer data, and sales and visitor analytics.  Storing this information in the cloud allows all of your devices and websites to access this information and increase exposure of your products and services.  An active AllProWebTools account is required to use this plugin a link will be provided to create a new account from within the plugin settings menu.
 
@@ -102,6 +128,9 @@ You can upload or download all of your inventory in CSV format at any time.
 9. Product Listing.
 
 == Changelog ==
+
+= 0.48BETA - 07/04/13 =
+1. Fixed iptracking and affiliate tracking
 
 = 0.47BETA - 07/04/13 =
 1. Fixed leadbox widget
