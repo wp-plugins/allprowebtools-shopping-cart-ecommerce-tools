@@ -26,7 +26,7 @@ function APWTShowProduct() {
 			if ($key > 0) {
 				//this is a variation add it to the get string
 				//$getstring .= urlencode($key)."=".urlencode($value)."&";
-				$getstring .= $key."=".$value."&";
+				$getstring .= $key."=".urlencode($value)."&";
 			}
 		}
 
