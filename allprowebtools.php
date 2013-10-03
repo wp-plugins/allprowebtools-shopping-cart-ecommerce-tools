@@ -3,7 +3,7 @@
 Plugin Name: AllProWebTools Cart
 Plugin URI: http://www.AllProWebTools.com
 Description: AllProWebTools Shopping Cart
-Version: 0.471BETA
+Version: 0.48BETA
 Author: AllProWebTools.com
 Author URI: http://www.AllProWebTools.com
 License: GPLv2
@@ -74,7 +74,8 @@ License: GPLv2
 	add_action('wp_enqueue_scripts', APWT_ajax_enqueuescripts);
 	add_action( 'wp_ajax_nopriv_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
 	add_action( 'wp_ajax_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
-
+	add_action( 'wp_ajax_nopriv_APWTChangeCreditCardAjax', 'APWTChangeCreditCardAjax' );
+	add_action( 'wp_ajax_APWTChangeCreditCardAjax', 'APWTChangeCreditCardAjax' );
 
 
 ?>
