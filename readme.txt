@@ -11,9 +11,9 @@ A cloud-based shopping cart integrated with email marketing that can be shared a
 
 == Description ==
 
-[See the online demo here](http://wpdemo.allprowebtools.com)
-
 Combined ecommerce and email marketing for revenue generating campaigns.
+
+[See the online demo here](http://wpdemo.allprowebtools.com)
 
 AllProWebTools is an all-in-one commerce solution for both online and brick and mortar small businesses. It combines all inventory, customers, leads, and orders between your online shopping cart, in store POS, and mobile devices. One login and one solution to manage content, lead generation and tracking to online shopping cart or POS to shipping to order tracking to customer re-engagement and re-marketing.
 
@@ -27,6 +27,7 @@ Take a test spin of our WordPress plugin BETA.  We would love to hear your feedb
 
 We want you to enjoy your experience with us, that is why we offer the following support options:
 
+* Call Anytime: 720-464-0001
 * [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 * Free live chat support (Monday - Friday 9am - 5pm MST)
 * Request a screen-share for a personal walk through the system to help you get started.
@@ -35,6 +36,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 
 * Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
+* Android integration with the [AllProWebTools Android app](https://play.google.com/store/apps/details?id=com.allprowebtools.APWTPOSMobiApp)
 * Shopping Cart
 * Email marketing
 * Autoresponder
@@ -59,7 +61,7 @@ We want you to enjoy your experience with us, that is why we offer the following
 * Unlimited products
 * Physical products
 * Downloadable Products
-* Ticket product allow you to sell event tickets with a scannable QR code to verify authenticity.
+* Ticket products allow you to sell event tickets with a scannable QR code to verify authenticity.
 * Gift Certificate products allows customers to redeem online with a serial number or in your brick in mortar store via QR Code.
 * Hourly rate products
 * Account credit products - allow clients to pre-pay for services and use credits later
@@ -127,10 +129,23 @@ You can upload or download all of your inventory in CSV format at any time.
 7. Mobile Integration
 8. Credit Card Swipe
 9. Product Listing.
+10. Manual Order Entry / Tracking
 
 == Changelog ==
 
-= 0.48BETA - 07/04/13 =
+= 1.0.1 - 10/03/13 =
+1. Integration with Android app
+1. Product shelf life
+1. Note trail per invoice (with customer email notification) - customer can respond via login (with admin email notification)
+1. Integrate sales tax with Avalara and StrikeIron
+1. Auto Generated Email Newsletter
+1. PO number for invoices
+1. Bill presentment with payment link
+1. Improved payment system allows partial payments
+1. Improved refund system allows choice of refund payment type
+1. Improved reseller system
+
+= 0.48BETA - 10/03/13 =
 1. Fixed iptracking and affiliate tracking
 
 = 0.47BETA - 07/04/13 =
