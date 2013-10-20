@@ -1,0 +1,641 @@
+/*
+Plugin Name: AllProWebTools Cart
+Plugin URI: http://www.AllProWebTools.com
+Description: AllProWebTools Shopping Cart
+Version: 0.3 (Beta)
+Author: AllProWebTools.com
+Author URI: http://www.AllProWebTools.com
+License: GPLv2
+*/
+
+/* -----------------------------------*/
+/* ------>>> Product Layout <<<-------*/
+/* -----------------------------------*/
+.product-list {
+	border-bottom:1px dashed #38567C;
+	padding:5px;
+	width:90%;
+	margin:0 auto;
+}
+
+.product-grid {
+	background: #F7F7F7;
+	border: 1px solid #E7E8E6;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 5px 5px 0px 0px;
+	margin: 4px 10px;
+	text-align: center;
+	color: #8D8B8B;
+	min-height:160px;
+	width:20%;
+	float:left;
+}
+
+.product-grid .rheader {
+	margin-left:10px;
+	font-size:1.0em;
+}
+
+.category-grid {
+	background: #F7F7F7;
+	border: 1px solid #E7E8E6;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	padding: 5px 5px 0px 0px;
+	margin: 4px 10px;
+	text-align: center;
+	color: #8D8B8B;
+	min-height:160px;
+	float:left;
+}
+
+.category-grid .rheader {
+	margin-left:10px;
+	font-size:1.0em;
+}
+
+#product{
+	width:550px;
+	background-color:#ffffff;
+	padding:20px 10px 20px 35px;
+	margin:0px;
+	font-weight:bold;
+	background-image:url(../images/template/prod-background.jpg);
+	background-repeat:no-repeat;
+}
+
+.prod_info{
+	width:595px;
+	margin:5px 5px 30px 5px;
+	padding:0px;
+	border:1px solid #888888;
+}
+
+.prod_info_header{
+	padding:3px 3px 0px 3px;
+	position:relative;
+	top:-23px;
+	background-color:#48b9eb;
+	width:100px;
+	height:23px;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:1em;
+	text-align:center;
+	margin:0px;
+}
+
+img.product{
+	float:left;
+	margin:5px 10px 5px 5px;
+}
+
+.prodpicwrapper {
+	width:100px;
+	height:90%;
+	display: block;
+	float:left;
+	margin:5px 10px 20px 5px;
+	text-align:center;
+}
+
+.productname {
+	margin-left:10px;
+	font-size:1.4em;
+}
+
+.prodprice {
+	text-decoration:none;
+	font-size:1.25em;
+}
+
+.qtydiscounts {
+	text-align:center;
+	margin-left:50px;
+}
+
+.outofstock {
+	margin:0px 0px 0px 5px;
+	padding:0px;
+	float:right;
+}
+
+.reviewheader {
+	margin:20px;
+}
+
+.socialwidgets {
+	width: 175px;
+}
+
+.socialtoprow {
+	padding-top:10px;
+}
+
+.socialfb {
+	border:none;
+	overflow:hidden;
+	width:80px;
+	height:21px;
+}
+
+.socialtwitter {
+ margin-right:-30px;
+ display:inline;
+}
+
+/* Product sidebar */
+ul.productsidebar {
+	list-style:none;
+	margin:0px;
+	padding: 5px 0px 5px 10px;
+	margin-top:2px;
+}
+
+.productsidebar li {
+	margin-bottom: 10px;
+}
+
+p.category {
+	padding: 6px 4px;
+	font-size: 1.1em;
+	line-height: 100%;
+	color: white;
+	background-color: #364d81;
+	border-radius:5px;
+	font-weight: bold;
+}
+
+/* Shopping Cart */
+#cart {
+	margin:10px auto;
+	width:100%;
+}
+
+#cart th, #cart td{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom:1px solid #CECECE;
+}
+
+.cart-description {
+	width:50%;
+}
+
+.cart-qty {
+	width:5%;
+}
+
+.cart-price {
+	width:20%;
+}
+
+.cart-total {
+	width:5%;
+}
+
+.coupon {
+	width:30%;
+	padding:5px;
+	border-radius:5px;
+	background:#eeeeee;
+}
+
+.cart-subtotal {
+	float:right;
+	padding:5px;
+	background:#eeeeee;
+	border-radius:5px;
+	width:40% !important;
+}
+
+.cart-subtotal  tr{
+	text-align:right;
+}
+
+.creditcard {
+	width:60% !important;
+}
+
+.shopping-related {
+	background:#eeeeee;
+	border-radius:5px;
+	width:100%;
+	height:200px;
+}
+.shopping-related h5{
+	padding:10px 0px 0px 10px;
+	margin-bottom: 0px;
+}
+.shopping-related .featured{
+	float:left;
+	margin:0px 10px;
+}
+
+/* Login Box */
+.loginbox {
+	display:block;
+	margin:5px auto;
+	width:80%;
+	border: 1px solid #666666;
+	border-radius:5px;
+	padding:5px 30px 10px 30px;
+}
+
+.loginfield {
+	width:60%;
+	border-radius:5px;
+	padding:5px 10px;
+}
+
+.loginemail {
+	width:60%;
+}
+
+.loginpass {
+	width:40%;
+}
+
+/* 2-step checkout */
+.checkoutbox {
+	display:block;
+	margin:5px auto;
+	width:90%;
+	border: 1px solid #666666;
+	border-radius:5px;
+	padding:5px 30px 10px 30px;
+}
+
+.countryselect {
+	width:180px;
+}
+
+.bigcontinue {
+	padding: 8px 15px !important;
+}
+
+.checkoutpaypal {
+	margin: 10px 0px 0px 0px;
+}
+
+/* Order Summary */
+.stickyright {
+	/*position: fixed;
+	top:220px;*/
+}
+
+#ordersumm {
+	margin:10px auto;
+	width:395px;
+	max-width:395px;
+}
+
+.orderinfobox {
+	background: #eeeeee;
+	border-radius: 5px;
+	padding:5px 10px;
+	margin:10px 0px;
+	border: 1px solid #B2B2B2;
+}
+
+#ordersumm th, #ordersumm td{
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom:1px solid #CECECE;
+}
+
+#ordersumm .product{
+	width:50px;
+}
+
+#summleft {
+	border-right: 1px solid #B2B2B2;
+	float: left;
+	display:block;
+	padding-right: 25px;
+	width: 495px;
+}
+
+#summright {
+	float: right;
+	display:block;
+	overflow: hidden;
+	width: 399px;
+}
+
+/* Add to cart and RSS Box */
+.header_row {
+	background-color:#38567C;
+	position:relative;
+	height:20px;
+	top:-3px;
+	left:-3px;
+	margin:0px;
+	padding:0px;
+	width:104%;
+	text-align:center;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.box{
+	padding:3px;
+	width:95%;
+	margin-top:30px;
+	padding-bottom:30px;
+}
+
+
+
+/*begin review overlay elements */
+
+#written-testimonial{
+	background: url('../images/testimonials/written.jpg') no-repeat top;
+	width:180px;
+	height:125px;
+	text-align:center;
+	visibility:visible;
+}
+
+#written-testimonial a:hover {
+	background: url('../images/testimonials/written.jpg') no-repeat  bottom;
+}
+
+#audio-testimonial{
+	background: url('../images/testimonials/audio.jpg') no-repeat top;
+	width:180px;
+	height:128px;
+	text-align:center;
+	visibility:visible;
+}
+#audio-testimonial a:hover {
+	background: url('../images/testimonials/audio.jpg') no-repeat bottom;
+}
+
+#video-testimonial{
+	background: url('../images/testimonials/video.jpg') no-repeat top;
+	width:180px;
+	height:128px;
+	text-align:center;
+	visibility:visible;
+}
+#video-testimonial a:hover {
+	background: url('../images/testimonials/video.jpg') no-repeat  bottom;
+}
+/*end review overlay elements */
+
+/* -----------------------------------*/
+/* ----->>> My Account Layout <<<-----*/
+/* -----------------------------------*/
+#accountHeader {
+	overflow: hidden;
+	margin-left:10px;
+}
+
+#primaryInfo {
+	height: 178px;
+	position: relative;
+}
+#primaryInfo li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0 45px;
+	width: 210px;
+	border-right: 1px dashed #CCC;
+	height: 100%;
+}
+#primaryInfo li li {
+	float: none;
+	width: auto;
+	margin: 3px 0;
+	font-size: 11px;
+	border: 0;
+	padding: 0;
+	height: auto;
+}
+#primaryInfo .shipping {
+	padding: 0 55px 0 10px;
+}
+#primaryInfo .user {
+	border: 0;
+}
+#orderTable {
+	width: 100%;
+	margin: -10px 0 7px;
+	border-width: 0px;
+	border-spacing: 0px;
+	display: table;
+	border-collapse: separate;
+	border-color: gray;
+}
+#orderTable th {
+	background: #F8F8F8;
+	border-bottom:1px dashed #CCC;
+	font-size: 9px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 10px 0 3px 5px;
+}
+
+#orderTable tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+	border-bottom:1px dashed #CCC;
+}
+
+#orderTable .odd {
+	background: #F8F8F8;
+}
+
+h3.cih, caption.cih {
+	font-family: Verdana, Arial, sans;
+	padding: 12px 10px;
+	clear: both;
+	text-transform: uppercase;
+	text-align: left;
+	background: #587DB4;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #EEE;
+}
+
+h1.hc, .h1hc {
+	font: italic 21px Georgia, "Times New Roman", serif;
+	width: auto;
+	float: left;
+	padding: 0;
+}
+
+h4.hc, h4hc {
+	font-family: Verdana, Arial, sans;
+	color: #585A5D;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: left;
+	float: left;
+	font-size: 9px;
+	text-align: left;
+	margin: 0px 0 10px 0;
+	padding: 0;
+}
+
+.rnd {
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+}
+
+.btn {
+	width: auto;
+	text-decoration: none;
+	overflow: visible;
+	font-family: Verdana, Arial, sans;
+	text-transform: uppercase;
+	border-radius: 6px;
+	outline: 0;
+	padding: 5px 8px;
+	border: 1px solid #DDD;
+	font-size: 9px;
+	font-weight: bold;
+	background: #E8E8E8;
+	text-indent: 0;
+}
+
+.accountbutton{
+	background-image:url('../images/template/icons/tick.png');
+	background-repeat:no-repeat;
+	background-position: center left;
+	border-radius: 6px;
+	color:#000000;
+	background-color:#E8E8E8;
+	border: 1px solid #DDD;
+	font-weight:bolder;
+	text-indent:20px;
+	text-align:left;
+	line-height:15px;
+	cursor:pointer;
+	padding:4px;
+	margin:3px;
+	font-size:12px;
+}
+
+.accountbutton:hover {
+	background-color:grey;
+	border: 1px solid #DDD;
+	color:#ffffff;
+}
+
+.user_address {
+	background-color:#E8E8E8;
+	width:25%;
+	margin:10px;
+	float:left;
+	padding:10px;
+	border-radius:5px;
+}
+
+/* -----------------------------------*/
+/* -------->>> Sign up Box <<<--------*/
+/* -----------------------------------*/
+
+.leadbox {
+	display: block;
+}
+
+.leadbox input[type=text],
+.leadbox input[type=password],
+.leadbox input[type=email],
+.leadbox input[type=tel],
+.leadbox select,
+.leadbox textarea {
+	width:95%;
+	padding:2px;
+	margin-bottom:5px;
+}
+
+
+/* -----------------------------------*/
+/* ------>>> Generic classes <<<------*/
+/* -----------------------------------*/
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.center {
+	display:block;
+	margin:0 auto;
+}
+
+.middle {
+	vertical-align:middle;
+}
+
+.rheader {
+	font-weight:bold;
+}
+
+.inline {
+	display:inline;
+}
+
+.ninja {
+	display:none;
+}
+
+.clearfix {
+	clear:both;
+}
+
+.emphasis {
+	font-weight:bold;
+}
+
+.red {
+	color:red;
+}
+
+.green {
+	color:green;
+}
+
+.yellow {
+	color:#C2C728;
+}
+
+.nomargin{
+	 margin:0;
+	 padding:0;
+}
+
+.error_message {
+	vertical-align:middle;
+	padding: 8px 3px 5px 14px;
+	margin-bottom: 5px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid #EED3D7;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #B94A48;
+	background-color: #F2DEDE;
+}
+
+.success_message {
+	vertical-align:middle;
+	padding: 8px 3px 5px 14px;
+	margin-bottom: 5px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border: 1px solid #d6e9c6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #468847;
+	background-color: #dff0d8;
+}
