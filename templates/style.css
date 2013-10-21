@@ -538,6 +538,26 @@ h4.hc, h4hc {
 }
 
 /* -----------------------------------*/
+/* -------->>> Sign up Box <<<--------*/
+/* -----------------------------------*/
+
+.leadbox {
+	display: block;
+}
+
+.leadbox input[type=text],
+.leadbox input[type=password],
+.leadbox input[type=email],
+.leadbox input[type=tel],
+.leadbox select,
+.leadbox textarea {
+	width:95%;
+	padding:2px;
+	margin-bottom:5px;
+}
+
+
+/* -----------------------------------*/
 /* ------>>> Generic classes <<<------*/
 /* -----------------------------------*/
 .left {

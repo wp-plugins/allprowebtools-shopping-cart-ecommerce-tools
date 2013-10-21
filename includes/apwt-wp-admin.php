@@ -8,8 +8,6 @@ function APWT_admin_menu() {
 		add_menu_page("AllProWebTools","AllProWebTools",'activate_plugins',"AllProWebTools3","APWTConsole",plugins_url( 'wp-icon.png', __FILE__ ));
 		add_submenu_page('AllProWebTools3','Settings','Settings','activate_plugins','APWTSettings','APWTSettings');
 	}
-//add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
-//add_submenu_page( $parent_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
 }
 
 function APWTConsole() {
@@ -20,17 +18,16 @@ function APWTConsole() {
 	$thereturn = wp_remote_get($thisurl);
 	$consolelocation = $thereturn['body'];
 
-	print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'login-screen.png', __FILE__ ).'" alt="Login now"></a>';
+	if (get_option("APWTAPIKEY") == '00myallprowebtoolsdemo255') {
+		print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'demo-screen.png', __FILE__ ).'" alt="Demo now"></a>';
+	} else {
+		print '<a href="'.$consolelocation.'" target="console"><img src="'.plugins_url( 'login-screen.png', __FILE__ ).'" alt="Login now"></a>';
+	}
 }
 
 function APWTSettings() {
 	if ( !current_user_can( 'manage_options' ) )  {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
-	}
-
-	if ($_POST['ClearServerUrl'] != '') {
-		$_SESSION['serverurl'] = '';
-		return;
 	}
 
 	if ($_POST['B1'] != '') {
@@ -39,6 +36,7 @@ function APWTSettings() {
 	    $count = 0;
 		} else {
 			//they have entered their api key - now save it
+			$_SESSION['serverurl'] = '';
 			if (!add_option( 'APWTAPIKEY', $_POST['apikey'])) {
 				update_option( 'APWTAPIKEY', $_POST['apikey'] );
 				if($_POST['apikey'] == '') {
@@ -133,11 +131,6 @@ function APWTSettings() {
 <?php
   if($count3 == 2) {
 		print '<br><br><img src="'.plugins_url( 'getstartedarrow.jpg', __FILE__ ).'" alt="Click AllProWebTools to get started!">';
-	}
-	$debug = 0;
-	if ($debug == 1) {
-		print "Server: ".$_SESSION['serverurl']."<br>";
-		print '<form method="POST" action=""><input type="submit" value="ClearServer" id="ClearServerUrl" name="ClearServerUrl" class="button"></form>';
 	}
 }
 ?>

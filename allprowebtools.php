@@ -3,7 +3,7 @@
 Plugin Name: AllProWebTools Cart
 Plugin URI: http://www.AllProWebTools.com
 Description: AllProWebTools Shopping Cart
-Version: 0.44 [BETA]
+Version: 1.0.1
 Author: AllProWebTools.com
 Author URI: http://www.AllProWebTools.com
 License: GPLv2
@@ -39,7 +39,11 @@ License: GPLv2
 		wp_enqueue_style( 'custom-style' );
     wp_register_style('jquery-ui', plugins_url( '/js/jquery-ui.css', __FILE__ ), array(), '1', 'all' );
     wp_enqueue_style( 'jquery-ui');
+    wp_register_style('jquery-rating', plugins_url( '/js/jquery.rating.css', __FILE__ ), array(), '1', 'all' );
+    wp_enqueue_style( 'jquery-rating');
    	wp_enqueue_script('jquery');
+    wp_register_script('jquery-rating', plugins_url( '/js/jquery.rating.js', __FILE__ ), array(), '1', 'all' );
+    wp_enqueue_script( 'jquery-rating');
     wp_enqueue_script( 'jquery-ui-dialog' );
     wp_enqueue_script( 'jquery-ui-tabs' );
 	}
@@ -52,7 +56,6 @@ License: GPLv2
 	}
 
 	//ajax
-//	define('AJAXLOADPOSTURL', WP_PLUGIN_URL."/".dirname( plugin_basename( __FILE__ ) ) );
 	define( 'APWT_PLUGIN_PATH', plugin_dir_path(__FILE__) );
 	define( 'APWT_AJAX_POST_URL', plugin_dir_url(__FILE__) );
 
@@ -70,7 +73,8 @@ License: GPLv2
 	add_action('wp_enqueue_scripts', APWT_ajax_enqueuescripts);
 	add_action( 'wp_ajax_nopriv_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
 	add_action( 'wp_ajax_APWTAjaxGetCoupon', 'APWTAjaxGetCoupon' );
-
+	add_action( 'wp_ajax_nopriv_APWTChangeCreditCardAjax', 'APWTChangeCreditCardAjax' );
+	add_action( 'wp_ajax_APWTChangeCreditCardAjax', 'APWTChangeCreditCardAjax' );
 
 
 ?>

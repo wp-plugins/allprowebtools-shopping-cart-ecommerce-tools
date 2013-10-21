@@ -72,6 +72,7 @@ function apwt_remote_post($url,$postvars,$secure=0) {
 	} else {
 		$protocol = 'http:';
 	}
+	$postvars['ip'] = $_SERVER["REMOTE_ADDR"];
 	$args['body'] = $postvars;
 	$response = wp_remote_post($protocol.$_SESSION['serverurl'].$url, $args);
 
@@ -98,7 +99,7 @@ function apwt_remote_post($url,$postvars,$secure=0) {
 		print "<pre>";
 		print_r($response);
 		print "</pre>";
-		print "error in apwt_remote_get";
+		print "error in apwt_remote_post";
 		exit;
 	}
 }
@@ -121,7 +122,7 @@ function apwt_remote_get($url) {
 	foreach ($pagelist as $key => $value) {
 		$urlappend .= "&pagearray[".$key."]=".$value;
 	}
-	$url .= $urlappend;
+	$url .= $urlappend.'&siteurl='.$_SERVER['HTTP_HOST'].'&ip='.$_SERVER["REMOTE_ADDR"];
 	$response = wp_remote_get("http:".$_SESSION['serverurl'].$url, $args);
 
 	if (empty($response->errors)) {
@@ -216,7 +217,7 @@ function APWTAddPage($the_page_title,$the_page_name,$content,$template='') {
         $_p['post_type'] = 'page';
         $_p['comment_status'] = 'closed';
         $_p['ping_status'] = 'closed';
-        $_p['post_category'] = array(1); // the default 'Uncatrgorised'
+        $_p['post_category'] = array(1); // the default 'Uncategorized'
 
         // Insert the post into the database
         $the_page_id = wp_insert_post( $_p );
@@ -259,7 +260,7 @@ function APWTPageList() {
 	$APWTPageArray[3]['Title'] = 'APWTCheckout';
 	$APWTPageArray[3]['Content'] = '[APWTCheckout]';
 	$APWTPageArray[3]['URL'] = 'APWTCheckout';
-	$APWTPageArray[3]['Template'] = 'page-templates/full-width.php';
+	$APWTPageArray[3]['Template'] = '';	//page-templates/full-width.php
 
 	$APWTPageArray[4]['Title'] = 'APWTLogout';
 	$APWTPageArray[4]['Content'] = '[APWTLogout]';
@@ -350,7 +351,7 @@ class APWTLeadBox extends WP_Widget {
     echo $before_widget;
 		if (isset($_POST['APWTLeadBox'])) {
     $APWTLeadBoxID = empty($instance['APWTLeadBoxID']) ? ' ' : apply_filters('widget_title', $instance['APWTLeadBoxID']);
-			$thisurl = "/wordpress/wpapi.php?action=getleadbox&leadboxid=".$APWTLeadBoxID."&name=".$_POST['APWTName']."&email=".$_POST['APWTEmail']."&".APIAuth();
+			$thisurl = "/wordpress/wpapi.php?action=getleadbox&leadboxid=".$APWTLeadBoxID."&name=".urlencode($_POST['APWTName'])."&email=".urlencode($_POST['APWTEmail'])."&".APIAuth();
 			$thereturn = apwt_remote_get($thisurl);
 			echo $thereturn;
 

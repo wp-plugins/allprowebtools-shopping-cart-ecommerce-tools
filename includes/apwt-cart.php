@@ -25,8 +25,7 @@ function APWTShowProduct() {
 			//$keycheck = substr($key,0,-1);
 			if ($key > 0) {
 				//this is a variation add it to the get string
-				//$getstring .= urlencode($key)."=".urlencode($value)."&";
-				$getstring .= $key."=".$value."&";
+				$getstring .= $key."=".urlencode($value)."&";
 			}
 		}
 
@@ -35,13 +34,11 @@ function APWTShowProduct() {
 		//this returns the url string to redirect to
 		echo "<meta http-equiv='refresh' content='0;url=?page_id=".get_site_option('APWTShowProduct')."&".$thereturn."' />";
 		exit;
-		//return $thereturn."rr";
 	} else {
 		foreach ($_REQUEST as $key => $value) {
 			$keycheck = substr($key,0,-1);
 			if ($keycheck > 0) {
 				//this is a variation add it to the get string
-				//$getstring .= urlencode($key)."=".urlencode($value)."&";
 				$getstring .= $keycheck."=".$value."&";
 			}
 			if ($_GET['available'] == '0') {
@@ -54,8 +51,10 @@ function APWTShowProduct() {
 		$thisurl = "/wordpress/wpapi.php?action=showproduct&prodid=".$_REQUEST['prodid'].'&'.$getstring.APIAuth();
 		$thereturn = apwt_remote_get($thisurl);
 
+		$thereturn .= '<div class="ninja">';
 		$thereturn .= '<div id="dialog-form" title="Get A Coupon">';
 		$thereturn .= APWTAjaxGetCouponContent($_REQUEST);
+		$thereturn .= '</div>';
 		$thereturn .= '</div>';
 
 		return $thereturn;
@@ -97,6 +96,14 @@ function APWTShowCart() {
 
 	if ($_POST['B1'] == 'Discount ME!') {
 		APWTShowCartNow();
+	}
+
+	if ($_REQUEST['country'] == 'specific') {
+		print '<div class="error_message">Items have been removed from your cart that were not available in your country.</div>';
+	}
+
+	if ($_GET['local'] != '') {
+		print '<div class="error_message">Items have been removed from your cart as you are not in the eligible local delivery area.</div>';
 	}
 
 	require_once(APWT_PLUGIN_PATH.'templates/shopping-cart.php');
@@ -233,10 +240,6 @@ function APWTShowCartNow() {
 
 		$url = "/wordpress/wpapi.php?action=updateqty&".APIAuth()."&wp=1";
 		$thereturn = apwt_remote_get($url);
-
-//		$cartreturn = explode("#",$thereturn);
-
-//		$_SESSION['cartid'] = $cartreturn[1];
 		if ($thereturn == 'put in show cart here') {
 			print "<meta http-equiv='refresh' content='0;url=?page_id=".get_site_option('APWTCart')."&order_id=".$thereturn."' />";
 			exit;
@@ -298,7 +301,7 @@ function APWTForgotPassword() {
 }
 
 function APWTAddReview() {
-	$thisurl = "/wordpress/wpapi.php?action=addreview&".APIAuth()."&wp=1&prodid=".$_REQUEST['prodid']."&email=".$_REQUEST['email']."&review=".urlencode($_REQUEST['review'])."&review_name=".urlencode($_REQUEST['review_name'])."&B1=".$_REQUEST['B1'];
+	$thisurl = "/wordpress/wpapi.php?action=addreview&".APIAuth()."&wp=1&prodid=".$_REQUEST['prodid']."&email=".$_REQUEST['email']."&star=".$_REQUEST['star']."&title=".urlencode($_REQUEST['title'])."&reviewblurb=".urlencode($_REQUEST['reviewblurb'])."&review_name=".urlencode($_REQUEST['review_name'])."&B1=".$_REQUEST['B1'];
 	$thereturn = apwt_remote_get($thisurl);
 
 	print $thereturn;
@@ -311,21 +314,21 @@ function APWTCompanyName() {
 	print $thereturn;
 }
 
-function APWTGetCoupon($_POST) {
-	$thisurl = "/wordpress/wpapi.php?action=coupon&name=".urlencode($_POST['name'])."&email=".urlencode($_POST['email'])."&prodid=".urlencode($_POST['prodid'])."&".APIAuth()."&wp=1";
+function APWTGetCoupon() {
+	$thisurl = "/wordpress/wpapi.php?action=coupon&name=".urlencode($_REQUEST['name'])."&email=".urlencode($_REQUEST['email'])."&prodid=".urlencode($_REQUEST['prodid'])."&".APIAuth()."&wp=1";
 	$thereturn = apwt_remote_get($thisurl);
 
 	return $thereturn;
 }
 
-function APWTUpdateBilling($_POST) {
+function APWTUpdateBilling() {
 	$thisurl = '/wordpress/wpapi.php';
 	$postvars['action'] = 'updatebilling';
-	$postvars['editcard'] = urlencode($_POST['editcard']);
-	$postvars['card_number_m'] = urlencode($_POST['card_number_m']);
-	$postvars['exp_month'] = urlencode($_POST['exp_month']);
-	$postvars['exp_year'] = urlencode($_POST['exp_year']);
-	$postvars['cvc'] = urlencode($_POST['cvc']);
+	$postvars['editcard'] = urlencode($_REQUEST['editcard']);
+	$postvars['card_number_m'] = urlencode($_REQUEST['card_number_m']);
+	$postvars['exp_month'] = urlencode($_REQUEST['exp_month']);
+	$postvars['exp_year'] = urlencode($_REQUEST['exp_year']);
+	$postvars['cvc'] = urlencode($_REQUEST['cvc']);
 	$postvars['apikey'] = get_option("APWTAPIKEY");
 	$postvars['apiauth'] = get_option("APWTAPIAUTH");
 	$postvars['apwtpluginversion'] = get_option("APWT_THIS_VERSION");
@@ -338,11 +341,11 @@ function APWTUpdateBilling($_POST) {
 // ajax functions
 
 function APWTAjaxGetCoupon() {
-    if ( !wp_verify_nonce( $_POST['nonce'], "apwt_coupon_nonce")) {
+    if ( !wp_verify_nonce( $_REQUEST['nonce'], "apwt_coupon_nonce")) {
         exit("Wrong nonce");
     }
 
-   	$thisurl = "/wordpress/wpapi.php?action=coupon&prodid=".urlencode($_POST['prodid']).'&email='.urlencode($_POST['email']).'&name'.urlencode($_POST['name']).'&'.APIAuth();
+   	$thisurl = "/wordpress/wpapi.php?action=coupon&prodid=".urlencode($_REQUEST['prodid']).'&email='.urlencode($_REQUEST['email']).'&name'.urlencode($_REQUEST['name']).'&'.APIAuth();
 		$thereturn = apwt_remote_get($thisurl);
 		$results = $thereturn;
     die($results);
@@ -350,7 +353,7 @@ function APWTAjaxGetCoupon() {
 
 
 
-function APWTAjaxGetCouponContent($_REQUEST){
+function APWTAjaxGetCouponContent(){
 
     $results ='';
     $nonce = wp_create_nonce("apwt_coupon_nonce");
