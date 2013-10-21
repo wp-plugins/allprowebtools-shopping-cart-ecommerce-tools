@@ -133,7 +133,7 @@ You can upload or download all of your inventory in CSV format at any time.
 
 == Changelog ==
 
-= 1.0.1 - 10/03/13 =
+= 1.0.1 - 10/21/13 =
 1. Integration with Android app
 1. Product shelf life
 1. Note trail per invoice (with customer email notification) - customer can respond via login (with admin email notification)
