@@ -590,7 +590,7 @@ h4.hc, h4hc {
 }
 
 .clearfix {
-	clear:both;
+/* clear:both; */
 }
 
 .emphasis {

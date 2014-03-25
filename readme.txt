@@ -2,8 +2,8 @@
 Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
-Tested up to: 3.8
-Stable tag: 1.0.1
+Tested up to: 3.8.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,9 @@ You can upload or download all of your inventory in CSV format at any time.
 10. Manual Order Entry / Tracking
 
 == Changelog ==
+
+= 1.0.2 - 03/24/14 =
+1. Fixed css for better theme compatibility
 
 = 1.0.1 - 10/21/13 =
 1. Integration with Android app
