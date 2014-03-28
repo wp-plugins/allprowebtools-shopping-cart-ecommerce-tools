@@ -349,9 +349,9 @@ class APWTLeadBox extends WP_Widget {
   function widget($args, $instance) {
     extract($args, EXTR_SKIP);
     echo $before_widget;
-		if (isset($_POST['APWTLeadBox'])) {
+		if (isset($_POST['APWTnewsletter'])) {
     $APWTLeadBoxID = empty($instance['APWTLeadBoxID']) ? ' ' : apply_filters('widget_title', $instance['APWTLeadBoxID']);
-			$thisurl = "/wordpress/wpapi.php?action=getleadbox&leadboxid=".$APWTLeadBoxID."&name=".urlencode($_POST['APWTName'])."&email=".urlencode($_POST['APWTEmail'])."&".APIAuth();
+			$thisurl = "/wordpress/wpapi.php?action=getleadbox&leadboxid=".$APWTLeadBoxID."&Name=".urlencode($_POST['APWTName'])."&Email=".urlencode($_POST['APWTEmail'])."&newsletter=".urlencode($_POST['APWT_newsletter'])."&".APIAuth();
 			$thereturn = apwt_remote_get($thisurl);
 			echo $thereturn;
 
