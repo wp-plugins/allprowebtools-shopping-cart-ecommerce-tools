@@ -3,7 +3,7 @@ Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
 Tested up to: 3.8.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,9 @@ You can upload or download all of your inventory in CSV format at any time.
 10. Manual Order Entry / Tracking
 
 == Changelog ==
+
+= 1.0.4 - 05/14/14 =
+1. CSS file updated for better compatibility
 
 = 1.0.3 - 03/28/14 =
 1. Addressed issue with lead box widget
