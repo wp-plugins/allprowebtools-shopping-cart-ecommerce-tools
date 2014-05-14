@@ -57,12 +57,9 @@ License: GPLv2
 
 #product{
 	width:550px;
-	background-color:#ffffff;
 	padding:20px 10px 20px 35px;
 	margin:0px;
 	font-weight:bold;
-	background-image:url(../images/template/prod-background.jpg);
-	background-repeat:no-repeat;
 }
 
 .prod_info{
