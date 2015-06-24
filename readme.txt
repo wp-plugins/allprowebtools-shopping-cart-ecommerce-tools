@@ -2,8 +2,8 @@
 Contributors: allprowebtools, pmschartz, rcgig, ceec
 Tags: allprowebtools, e-commerce, tickets, cart, gift certificate, authorize, inventory, ecommerce, shipping, variations, iphone, tools
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 1.0.4
+Tested up to: 4.2.2
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ Take a test spin of our WordPress plugin BETA.  We would love to hear your feedb
 
 We want you to enjoy your experience with us, that is why we offer the following support options:
 
-* Call Anytime: 720-464-0001
+* Call Anytime: 970-612-1515
 * [AllProWebTools Tutorial videos](http://www.youtube.com/allprowebtools1) are available to assist you.
 * Free live chat support (Monday - Friday 9am - 5pm MST)
 * Request a screen-share for a personal walk through the system to help you get started.
@@ -36,7 +36,6 @@ We want you to enjoy your experience with us, that is why we offer the following
 
 * Can sell items worldwide - but only works for United States based businesses and US Dollars
 * iPhone integration with the [AllProWebTools iPhone app](http://www.allprowebtools.com/app)
-* Android integration with the [AllProWebTools Android app](https://play.google.com/store/apps/details?id=com.allprowebtools.APWTPOSMobiApp)
 * Shopping Cart
 * Email marketing
 * Autoresponder
@@ -132,6 +131,9 @@ You can upload or download all of your inventory in CSV format at any time.
 10. Manual Order Entry / Tracking
 
 == Changelog ==
+
+= 1.0.6 - 06/23/15 =
+1. Allow product page to be category specific
 
 = 1.0.4 - 05/14/14 =
 1. CSS file updated for better compatibility
