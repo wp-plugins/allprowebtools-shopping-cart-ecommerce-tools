@@ -73,6 +73,8 @@ This is a Serviceware plugin for WordPress which interfaces with the AllProWebTo
 
 == Installation ==
 
+[youtube https://www.youtube.com/watch?v=HoZC38suBIc]
+
 **Automatic Installation**
 
 1. Login to your wordpress with wp-admin
